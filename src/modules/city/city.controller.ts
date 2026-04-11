@@ -2,6 +2,10 @@ import { NextFunction, Request, Response } from "express";
 import { cityService } from "./city.service";
 
 export class CityController {
+  getDashboard(_req: Request, res: Response) {
+    res.json({ success: true, data: cityService.getDashboard() });
+  }
+
   private getFilingId(req: Request) {
     const value = req.params.filingId;
     return Array.isArray(value) ? value[0] : value;
@@ -9,6 +13,11 @@ export class CityController {
 
   listPendingFilings(_req: Request, res: Response) {
     const rows = cityService.listPendingFilings();
+    res.json({ success: true, data: rows });
+  }
+
+  listDecisions(_req: Request, res: Response) {
+    const rows = cityService.listDecisions();
     res.json({ success: true, data: rows });
   }
 

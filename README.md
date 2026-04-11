@@ -2,6 +2,18 @@
 
 Modular backend scaffold for Yunnan enterprise employment-unemployment data collection system.
 
+## Frontend
+
+The `client/` folder now contains a role-aware React SPA with:
+
+- Login and demo accounts
+- Enterprise, city, and province workspaces
+- Cross-role view switching in the top bar
+- Subpages for filing, review, summary, and analysis flows
+- Slide-over drawers for record details and workflow traceability
+- Notice center, exchange center, and system settings pages
+- Responsive layout and a custom visual theme
+
 ## Tech stack
 
 - Node.js + Express
@@ -42,8 +54,28 @@ npm install
 npm run dev
 ```
 
+In another terminal:
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+Or from the repository root:
+
+```bash
+npm run dev:client
+```
+
 ## Current API examples
 
+- `GET /api/v1/enterprise/dashboard`
+- `GET /api/v1/enterprise/filings/:filingId`
+- `GET /api/v1/enterprise/reports/:reportId`
+- `GET /api/v1/city/dashboard`
+- `GET /api/v1/city/filings/decisions`
+- `GET /api/v1/province/dashboard`
 - `POST /api/v1/auth/login`
 - `POST /api/v1/enterprise/filings`
 - `POST /api/v1/enterprise/reports`
@@ -52,6 +84,31 @@ npm run dev
 - `GET /api/v1/province/reports/summary`
 - `POST /api/v1/notice/publish`
 - `POST /api/v1/exchange/push-national`
+
+## Frontend routes
+
+- `/login`
+- `/app/enterprise/home`
+- `/app/enterprise/filing/overview`
+- `/app/enterprise/filing/basic`
+- `/app/enterprise/filing/history`
+- `/app/enterprise/reports/overview`
+- `/app/enterprise/reports/submit`
+- `/app/enterprise/reports/history`
+- `/app/city/home`
+- `/app/city/review/queue`
+- `/app/city/review/decisions`
+- `/app/city/review/flow`
+- `/app/province/home`
+- `/app/province/summary/overview`
+- `/app/province/summary/export`
+- `/app/province/summary/comparison`
+- `/app/province/analysis/trend`
+- `/app/province/analysis/alerts`
+- `/app/province/analysis/district`
+- `/app/:role/notices`
+- `/app/:role/exchange`
+- `/app/province/settings`
 
 ## Next steps
 

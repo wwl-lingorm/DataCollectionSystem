@@ -33,6 +33,52 @@ export class EnterpriseService {
     return enterpriseRepository.listFilings();
   }
 
+  getDashboard() {
+    const filings = enterpriseRepository.listFilings();
+    const reports = enterpriseRepository.listReports();
+    const latestFiling = filings.length > 0 ? filings[filings.length - 1] : null;
+    const latestReport = reports.length > 0 ? reports[reports.length - 1] : null;
+
+    const submittedCount = enterpriseRepository.listFilingsByStatus("submitted").length;
+    const approvedCount = enterpriseRepository.listFilingsByStatus("approved").length;
+    const rejectedCount = enterpriseRepository.listFilingsByStatus("rejected").length;
+
+    return {
+      filingCount: filings.length,
+      submittedCount,
+      approvedCount,
+      rejectedCount,
+      reportCount: reports.length,
+      latestFiling,
+      latestReport,
+      completionRate: filings.length === 0 ? 0 : Math.round((approvedCount / filings.length) * 100),
+      generatedAt: new Date().toISOString()
+    };
+  }
+
+  getFilingDetail(filingId: string) {
+    const filing = enterpriseRepository.findFilingById(filingId);
+
+    if (!filing) {
+      throw new AppError("Filing not found", 404);
+    }
+
+    return {
+      filing,
+      reports: enterpriseRepository.listReportsByFilingId(filingId)
+    };
+  }
+
+  getReportDetail(reportId: string) {
+    const report = enterpriseRepository.findReportById(reportId);
+
+    if (!report) {
+      throw new AppError("Report not found", 404);
+    }
+
+    return report;
+  }
+
   submitMonthlyReport(payload: unknown) {
     const data = reportSchema.parse(payload);
     const filing = enterpriseRepository.findFilingById(data.filingId);
