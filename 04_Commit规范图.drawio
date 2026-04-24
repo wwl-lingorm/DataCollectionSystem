@@ -1,0 +1,177 @@
+<mxfile host="app.diagrams.net" modified="2026-04-24T00:00:00.000Z" agent="Draw.io" version="21.0.0">
+  <diagram name="Commit规范图" id="commit-spec">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="Git Commit 规范" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="500" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="subtitle" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;&lt;font color=&quot;#2c3e50&quot;&gt;&amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="500" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Type 表格 -->
+        <mxCell id="type_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f3f4;strokeColor=#bdc3c7;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="110" width="500" height="230" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="type_title" value="Type 类型" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#2c3e50;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="100" height="25" as="geometry"/>
+        </mxCell>
+        
+        <!-- Type 行 -->
+        <mxCell id="type_feat" value="feat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=#27ae60;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="155" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="type_feat_desc" value="新功能" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="195" y="160" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="type_feat_example" value="feat(企业端): 增加半月报周期选择" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="310" y="160" width="250" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="type_fix" value="fix" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=#c0392b;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="195" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="type_fix_desc" value="修复bug" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="195" y="200" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="type_fix_example" value="fix(移动端): 修复iOS下日期选择器崩溃" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="310" y="200" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="type_docs" value="docs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=#2980b9;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="235" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="type_docs_desc" value="文档更新" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="195" y="240" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="type_docs_example" value="docs(计划): 更新v5.1变更后计划" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="310" y="240" width="230" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="type_style" value="style" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b59b6;strokeColor=#8e44ad;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="275" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="type_style_desc" value="代码格式" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="195" y="280" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="type_style_example" value="style(后端): 统一缩进为4空格" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="310" y="280" width="210" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- Scope 表格 -->
+        <mxCell id="scope_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f3f4;strokeColor=#bdc3c7;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="110" width="500" height="230" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="scope_title" value="Scope 范围" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#2c3e50;" vertex="1" parent="1">
+          <mxGeometry x="820" y="120" width="100" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="scope_row1_label" value="企业端" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="155" width="60" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope_row1_desc" value="企业模块功能" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="155" width="100" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope_row1_example" value="feat(企业端): 增加备案信息修改" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="830" y="155" width="250" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="scope_row2_label" value="市级端" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="190" width="60" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope_row2_desc" value="市级模块功能" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="190" width="100" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope_row2_example" value="fix(市级端): 修复审核状态显示错误" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="830" y="190" width="250" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="scope_row3_label" value="省级端" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="225" width="60" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope_row3_desc" value="省级模块功能" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="225" width="100" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope_row3_example" value="feat(省级端): 增加PDF导出功能" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="830" y="225" width="250" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="scope_row4_label" value="移动端" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="260" width="60" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope_row4_desc" value="移动端模块" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="260" width="100" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope_row4_example" value="fix(移动端): 修复弱网下提交失败" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="830" y="260" width="250" height="25" as="geometry"/>
+        </mxCell>
+        
+        <!-- 规范说明 -->
+        <mxCell id="rule_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f8f5;strokeColor=#1abc9c;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="370" width="1040" height="120" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rule_title" value="📐 Subject 规范" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1abc9c;" vertex="1" parent="1">
+          <mxGeometry x="100" y="380" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rule1" value="• 使用祈使句，现在时态（&quot;增加&quot;而不是&quot;增加了&quot;）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="415" width="350" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rule2" value="• 首字母小写" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="440" width="150" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rule3" value="• 结尾不加句号" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="460" width="150" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="rule4" value="• 不超过50个字符" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="415" width="150" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- 示例对比 -->
+        <mxCell id="good_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5f5e3;strokeColor=#27ae60;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="500" height="100" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="good_title" value="✅ 优秀示例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#27ae60;" vertex="1" parent="1">
+          <mxGeometry x="250" y="530" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="good1" value="feat(企业端): 增加半月报周期选择控件" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="565" width="300" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="good2" value="fix(移动端): 修复iOS下日期选择器崩溃问题" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="590" width="320" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="bad_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fadbd8;strokeColor=#e74c3c;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="520" width="500" height="100" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="bad_title" value="❌ 错误示例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#e74c3c;" vertex="1" parent="1">
+          <mxGeometry x="800" y="530" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="bad1" value="更新代码（缺少type和scope）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="640" y="565" width="250" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="bad2" value="Feat:xxx（首字母大写）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="640" y="590" width="220" height="20" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,186 @@
+<mxfile host="app.diagrams.net" modified="2026-04-24T00:00:00.000Z" agent="Draw.io" version="21.0.0">
+  <diagram name="Git分支策略图" id="git-branch">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="Git 分支策略模型（Git Flow）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="600" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- main 分支线 -->
+        <mxCell id="main_line" value="" style="rounded=0;html=1;strokeColor=#e74c3c;strokeWidth=4;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="1200" height="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="main_label" value="main (生产)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#e74c3c;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="100" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- main 分支上的版本标签 -->
+        <mxCell id="main_v1" value="v1.0.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=#c0392b;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="350" y="108" width="60" height="24" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="main_v2" value="v1.0.1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=#c0392b;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="750" y="108" width="60" height="24" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="main_v3" value="v1.1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=#c0392b;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="108" width="60" height="24" as="geometry"/>
+        </mxCell>
+        
+        <!-- develop 分支线 -->
+        <mxCell id="develop_line" value="" style="rounded=0;html=1;strokeColor=#2ecc71;strokeWidth=3;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="1200" height="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="develop_label" value="develop (开发主干)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#2ecc71;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="140" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- 连接 main 和 develop 的箭头 -->
+        <mxCell id="merge_v1" value="" style="endArrow=classic;html=1;strokeColor=#e74c3c;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="132" as="sourcePoint"/>
+            <mxPoint x="380" y="155" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="380" y="140"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="merge_v1_label" value="合并发布" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="390" y="136" width="60" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- release 分支 -->
+        <mxCell id="release_line" value="" style="rounded=0;html=1;strokeColor=#3498db;strokeWidth=2;dashed=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="170" width="200" height="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="release_label" value="release/v1.0" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#3498db;" vertex="1" parent="1">
+          <mxGeometry x="280" y="155" width="100" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- feature 分支 -->
+        <mxCell id="feature1_line" value="" style="rounded=0;html=1;strokeColor=#f39c12;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="280" width="300" height="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="feature1_label" value="feature/web-企业后端 (朱写)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#f39c12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="265" width="180" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="feature2_line" value="" style="rounded=0;html=1;strokeColor=#f39c12;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="320" width="300" height="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="feature2_label" value="feature/web-省市后端 (涂睿轩)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#f39c12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="305" width="200" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="feature3_line" value="" style="rounded=0;html=1;strokeColor=#f39c12;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="360" width="300" height="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="feature3_label" value="feature/web-企业前端 (钱泰文)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#f39c12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="345" width="200" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="feature4_line" value="" style="rounded=0;html=1;strokeColor=#f39c12;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="400" width="300" height="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="feature4_label" value="feature/mobile-前端 (钱泰文)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#f39c12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="385" width="200" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- feature 连接到 develop 的箭头 -->
+        <mxCell id="feature_merge1" value="" style="endArrow=classic;html=1;strokeColor=#f39c12;strokeWidth=1.5;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="280" as="sourcePoint"/>
+            <mxPoint x="500" y="220" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="feature_merge2" value="" style="endArrow=classic;html=1;strokeColor=#f39c12;strokeWidth=1.5;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint"/>
+            <mxPoint x="550" y="220" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="feature_merge3" value="" style="endArrow=classic;html=1;strokeColor=#f39c12;strokeWidth=1.5;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint"/>
+            <mxPoint x="600" y="220" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- hotfix 分支 -->
+        <mxCell id="hotfix_line" value="" style="rounded=0;html=1;strokeColor=#e67e22;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="250" height="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="hotfix_label" value="hotfix/登录失败" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#e67e22;" vertex="1" parent="1">
+          <mxGeometry x="600" y="265" width="120" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="hotfix_merge" value="" style="endArrow=classic;html=1;strokeColor=#e67e22;strokeWidth=1.5;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="850" y="280" as="sourcePoint"/>
+            <mxPoint x="780" y="220" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 图例 -->
+        <mxCell id="legend_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="600" height="100" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_title" value="图例" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="490" width="60" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_main" value="" style="rounded=0;html=1;strokeColor=#e74c3c;strokeWidth=4;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="525" width="40" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_main_text" value="main (生产分支)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="150" y="518" width="120" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_develop" value="" style="rounded=0;html=1;strokeColor=#2ecc71;strokeWidth=3;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="525" width="40" height="3" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_develop_text" value="develop (开发主干)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="350" y="518" width="130" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_feature" value="" style="rounded=0;html=1;strokeColor=#f39c12;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="550" width="40" height="2" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_feature_text" value="feature/* (功能分支)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="150" y="542" width="130" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_release" value="" style="rounded=0;html=1;strokeColor=#3498db;strokeWidth=2;dashed=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="550" width="40" height="2" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_release_text" value="release/* (发布分支)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="350" y="542" width="130" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_hotfix" value="" style="rounded=0;html=1;strokeColor=#e67e22;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="550" width="40" height="2" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_hotfix_text" value="hotfix/* (紧急修复)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="550" y="542" width="130" height="20" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

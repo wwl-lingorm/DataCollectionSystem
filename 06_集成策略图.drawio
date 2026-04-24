@@ -1,0 +1,251 @@
+<mxfile host="app.diagrams.net" modified="2026-04-24T00:00:00.000Z" agent="Draw.io" version="21.0.0">
+  <diagram name="集成策略图" id="integration-strategy">
+    <mxGraphModel dx="1400" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1100" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="持续集成与渐进集成策略图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 阶段1 -->
+        <mxCell id="phase1_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f3f4;strokeColor=#bdc3c7;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="1320" height="120" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="phase1_label" value="阶段1：独立开发 + Mock测试" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="250" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="mock1" value="企业模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=#2980b9;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="120" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="mock2" value="市级模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=#27ae60;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="260" y="120" width="120" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="mock3" value="省级模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=#c0392b;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="440" y="120" width="120" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="mock4" value="移动端" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f39c12;strokeColor=#e67e22;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="120" width="120" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="mock_mark" value="(Mock数据)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="85" y="170" width="110" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- 箭头1 -->
+        <mxCell id="arrow1" value="" style="endArrow=classic;html=1;strokeColor=#e74c3c;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="145" as="sourcePoint"/>
+            <mxPoint x="780" y="145" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 阶段2 -->
+        <mxCell id="phase2_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f8f5;strokeColor=#1abc9c;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="1320" height="140" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="phase2_label" value="阶段2：Web前后端集成（每周集成一次）" style="text;html=1;strokeColor=none;fillColor=#1abc9c;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="280" height="25" as="geometry"/>
+        </mxCell>
+        
+        <!-- Vue前端 -->
+        <mxCell id="vue_frontend" value="Vue 前端" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b59b6;strokeColor=#8e44ad;fontColor=#ffffff;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="285" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Spring Boot后端 -->
+        <mxCell id="spring_backend" value="Spring Boot 后端" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=#27ae60;fontColor=#ffffff;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="285" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- 双向箭头 -->
+        <mxCell id="arrow2a" value="" style="endArrow=classic;html=1;strokeColor=#2c3e50;strokeWidth=2;" edge="1" parent="1" source="vue_frontend" target="spring_backend">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow2b" value="" style="endArrow=classic;html=1;strokeColor=#2c3e50;strokeWidth=2;" edge="1" parent="1" source="spring_backend" target="vue_frontend">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="api_label" value="RESTful API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#7f8c8d;" vertex="1" parent="1">
+          <mxGeometry x="420" y="300" width="80" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- CI说明 -->
+        <mxCell id="ci_note" value="CI触发：push到develop → 自动编译 → 单元测试 → 部署到集成环境" style="text;html=1;strokeColor=none;fillColor=#fef9e7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontColor=#e67e22;" vertex="1" parent="1">
+          <mxGeometry x="780" y="295" width="400" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 箭头2 -->
+        <mxCell id="arrow2" value="" style="endArrow=classic;html=1;strokeColor=#e74c3c;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="310" as="sourcePoint"/>
+            <mxPoint x="780" y="310" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 阶段3 -->
+        <mxCell id="phase3_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef9e7;strokeColor=#f39c12;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="1320" height="140" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="phase3_label" value="阶段3：模块间集成（企业→市→省）" style="text;html=1;strokeColor=none;fillColor=#f39c12;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="280" height="25" as="geometry"/>
+        </mxCell>
+        
+        <!-- 企业端 -->
+        <mxCell id="ent_node" value="企业端&#xa;数据上报" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=#2980b9;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="120" y="465" width="140" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- 箭头 -->
+        <mxCell id="arrow_ent_city" value="" style="endArrow=classic;html=1;strokeColor=#f39c12;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="495" as="sourcePoint"/>
+            <mxPoint x="360" y="495" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 市级端 -->
+        <mxCell id="city_node" value="市级端&#xa;审核通过" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=#27ae60;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="465" width="140" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow_city_prov" value="" style="endArrow=classic;html=1;strokeColor=#f39c12;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="495" as="sourcePoint"/>
+            <mxPoint x="600" y="495" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 省级端 -->
+        <mxCell id="prov_node" value="省级端&#xa;汇总分析" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=#c0392b;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="465" width="140" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="e2e_note" value="端到端测试：完整业务流程验证" style="text;html=1;strokeColor=none;fillColor=#e8f8f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontColor=#1abc9c;" vertex="1" parent="1">
+          <mxGeometry x="800" y="475" width="220" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 箭头3 -->
+        <mxCell id="arrow3" value="" style="endArrow=classic;html=1;strokeColor=#e74c3c;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="560" as="sourcePoint"/>
+            <mxPoint x="780" y="560" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 阶段4 -->
+        <mxCell id="phase4_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5eef8;strokeColor=#9b59b6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="1320" height="140" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="phase4_label" value="阶段4：移动端与后端集成" style="text;html=1;strokeColor=none;fillColor=#9b59b6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="220" height="25" as="geometry"/>
+        </mxCell>
+        
+        <!-- uni-app -->
+        <mxCell id="uniapp" value="uni-app 移动端" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=#c0392b;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="645" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="spring_backend2" value="Spring Boot 后端" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=#27ae60;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="645" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow4a" value="" style="endArrow=classic;html=1;strokeColor=#2c3e50;strokeWidth=2;" edge="1" parent="1" source="uniapp" target="spring_backend2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow4b" value="" style="endArrow=classic;html=1;strokeColor=#2c3e50;strokeWidth=2;" edge="1" parent="1" source="spring_backend2" target="uniapp">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="mobile_api_label" value="复用80% Web端接口" style="text;html=1;strokeColor=none;fillColor=#fef9e7;align=center;verticalAlign=middle;fontSize=11;fontColor=#e67e22;" vertex="1" parent="1">
+          <mxGeometry x="430" y="660" width="120" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- 阶段5 -->
+        <mxCell id="phase5_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf2f8;strokeColor=#3498db;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="780" width="1320" height="120" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="phase5_label" value="阶段5：外部系统集成（国家接口）" style="text;html=1;strokeColor=none;fillColor=#3498db;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="780" width="260" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="prov_backend" value="省级后端" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=#c0392b;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="120" y="825" width="120" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow_mock" value="" style="endArrow=classic;html=1;strokeColor=#3498db;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="850" as="sourcePoint"/>
+            <mxPoint x="340" y="850" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="mock_server" value="Mock Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f39c12;strokeColor=#e67e22;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="340" y="825" width="120" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="arrow_national" value="" style="endArrow=classic;html=1;strokeColor=#3498db;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="850" as="sourcePoint"/>
+            <mxPoint x="560" y="850" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="national_system" value="国家失业监测系统" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=none;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="825" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 底部环境图 -->
+        <mxCell id="env_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2c3e50;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="940" width="1320" height="80" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="env_title" value="集成环境配置" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="60" y="950" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="env_dev" value="开发环境&#xa;(localhost)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7f8c8d;strokeColor=none;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="975" width="120" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="env_arrow1" value="───▶" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="205" y="980" width="30" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="env_integration" value="集成环境&#xa;(10.0.0.1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=none;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="240" y="975" width="120" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="env_arrow2" value="───▶" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="365" y="980" width="30" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="env_test" value="测试环境&#xa;(10.0.0.2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=none;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="400" y="975" width="120" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="env_arrow3" value="───▶" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="525" y="980" width="30" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="env_prod" value="生产环境&#xa;(待定)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=none;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="560" y="975" width="120" height="35" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

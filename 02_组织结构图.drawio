@@ -1,0 +1,184 @@
+<mxfile host="app.diagrams.net" modified="2026-04-24T00:00:00.000Z" agent="Draw.io" version="21.0.0">
+  <diagram name="组织结构图" id="org-chart">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="云南省企业就业失业数据采集系统 - 组织结构图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 项目经理 - 顶层 -->
+        <mxCell id="pm_node" value="&lt;b&gt;项目经理 (PM)&lt;/b&gt;&lt;br&gt;王威霖&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;90% 投入&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#16213e;fontColor=#ffffff;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- 连接线 - 项目经理到各组 -->
+        <mxCell id="line_to_groups" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#34495e;strokeWidth=2;startArrow=none;endArrow=none;" edge="1" parent="1" source="pm_node" target="groups_center">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="150" as="sourcePoint"/>
+            <mxPoint x="590" y="180" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="590" y="160"/>
+              <mxPoint x="590" y="170"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 中间连接点 -->
+        <mxCell id="groups_center" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#34495e;strokeColor=#34495e;" vertex="1" parent="1">
+          <mxGeometry x="585" y="170" width="10" height="10" as="geometry"/>
+        </mxCell>
+        
+        <!-- 连接线到各组 -->
+        <mxCell id="line_to_req" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#34495e;strokeWidth=2;startArrow=none;endArrow=none;" edge="1" parent="1" source="groups_center" target="req_group">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="line_to_backend" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#34495e;strokeWidth=2;startArrow=none;endArrow=none;" edge="1" parent="1" source="groups_center" target="backend_group">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="line_to_frontend" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#34495e;strokeWidth=2;startArrow=none;endArrow=none;" edge="1" parent="1" source="groups_center" target="frontend_group">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="line_to_test" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#34495e;strokeWidth=2;startArrow=none;endArrow=none;" edge="1" parent="1" source="groups_center" target="test_group">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="line_to_cm" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#34495e;strokeWidth=2;startArrow=none;endArrow=none;" edge="1" parent="1" source="groups_center" target="cm_group">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="line_to_doc" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#34495e;strokeWidth=2;startArrow=none;endArrow=none;" edge="1" parent="1" source="groups_center" target="doc_group">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 需求组 -->
+        <mxCell id="req_group" value="&lt;b&gt;需求组&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=#2980b9;fontColor=#ffffff;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="260" width="160" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="req_member1" value="金青宏&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;需求分析师&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d6eaf8;strokeColor=#2980b9;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="90" y="320" width="140" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="req_member2" value="曹彭博&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;原型设计师&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d6eaf8;strokeColor=#2980b9;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="90" y="385" width="140" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 后端组 -->
+        <mxCell id="backend_group" value="&lt;b&gt;后端组&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=#27ae60;fontColor=#ffffff;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="290" y="260" width="160" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="backend_member1" value="涂睿轩&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;后端架构师&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5f5e3;strokeColor=#27ae60;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="290" y="320" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="backend_member2" value="曾彦承&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;后端开发/接口&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5f5e3;strokeColor=#27ae60;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="290" y="385" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="backend_member3" value="朱写&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;后端开发&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5f5e3;strokeColor=#27ae60;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="290" y="450" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 前端组 -->
+        <mxCell id="frontend_group" value="&lt;b&gt;前端组&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e67e22;strokeColor=#d35400;fontColor=#ffffff;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="500" y="260" width="160" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="frontend_member1" value="钱泰文&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;前端/移动端&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#d35400;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="320" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="frontend_member2" value="余博文&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;前端开发&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdebd0;strokeColor=#d35400;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="385" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 测试组 -->
+        <mxCell id="test_group" value="&lt;b&gt;测试组&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b59b6;strokeColor=#8e44ad;fontColor=#ffffff;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="710" y="260" width="160" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="test_member1" value="曹相阳&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;测试组长&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ebdef0;strokeColor=#8e44ad;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="320" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="test_member2" value="李一鸣&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;测试工程师&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ebdef0;strokeColor=#8e44ad;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="710" y="385" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- CM/部署组 -->
+        <mxCell id="cm_group" value="&lt;b&gt;CM/部署组&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1abc9c;strokeColor=#16a085;fontColor=#ffffff;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="920" y="260" width="160" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="cm_member1" value="王琛红&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;配置管理员&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1f2eb;strokeColor=#16a085;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="320" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 文档组 -->
+        <mxCell id="doc_group" value="&lt;b&gt;文档组&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f39c12;strokeColor=#e67e22;fontColor=#ffffff;fontSize=13;align=center;" vertex="1" parent="1">
+          <mxGeometry x="920" y="400" width="160" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="doc_member1" value="孙谋&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;文档工程师&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef9e7;strokeColor=#e67e22;fontColor=#2c3e50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="455" width="160" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 图例 -->
+        <mxCell id="legend_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;" vertex="1" parent="1">
+          <mxGeometry x="80" y="540" width="1000" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="560" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend1_text" value="需求组" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="125" y="558" width="60" height="24" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="560" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend2_text" value="后端组" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="225" y="558" width="60" height="24" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e67e22;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="560" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend3_text" value="前端组" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="325" y="558" width="60" height="24" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b59b6;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="560" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend4_text" value="测试组" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="425" y="558" width="60" height="24" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1abc9c;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="560" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend5_text" value="CM/部署组" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="525" y="558" width="80" height="24" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f39c12;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="560" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend6_text" value="文档组" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="645" y="558" width="60" height="24" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,185 @@
+<mxfile host="app.diagrams.net" modified="2026-04-24T00:00:00.000Z" agent="Draw.io" version="21.0.0">
+  <diagram name="周报模板图" id="weekly-report">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="950" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 周报卡片 -->
+        <mxCell id="report_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2c3e50;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1120" height="920" as="geometry"/>
+        </mxCell>
+        
+        <!-- 标题栏 -->
+        <mxCell id="header_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="header_title" value="云南省企业就业失业数据采集系统 - 第X周周报" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="300" y="30" width="500" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 报告信息 -->
+        <mxCell id="info_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;" vertex="1" parent="1">
+          <mxGeometry x="60" y="95" width="1080" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="info_period" value="报告周期：2026年XX月XX日 - 2026年XX月XX日" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="75" y="100" width="300" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="info_reporter" value="报告人：王威霖" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="100" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="info_date" value="报告日期：2026年XX月XX日" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="900" y="100" width="220" height="25" as="geometry"/>
+        </mxCell>
+        
+        <!-- 一、本周完成情况 -->
+        <mxCell id="section1_title" value="一、本周完成情况" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="60" y="145" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="table1_header" value="序号,任务名称,负责人,状态,完成度,备注" style="text;html=1;strokeColor=#dee2e6;fillColor=#e9ecef;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="175" width="1080" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t1_r1" value="1,企业端半月报填报页面开发,朱写,完成,100%,-" style="text;html=1;strokeColor=#dee2e6;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t1_r2" value="2,移动端框架搭建,钱泰文,进行,80%,周四PR" style="text;html=1;strokeColor=#dee2e6;fillColor=#f8f9fa;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="222" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t1_r3" value="3,国家接口字段映射,曾彦承,完成,100%,-" style="text;html=1;strokeColor=#dee2e6;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="244" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t1_r4" value="4,Web端功能测试,李一鸣,进行,60%,-" style="text;html=1;strokeColor=#dee2e6;fillColor=#f8f9fa;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="266" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <!-- 二、下周工作计划 -->
+        <mxCell id="section2_title" value="二、下周工作计划" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="60" y="305" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="table2_header" value="序号,任务名称,负责人,计划完成日,优先级" style="text;html=1;strokeColor=#dee2e6;fillColor=#e9ecef;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="335" width="1080" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t2_r1" value="1,移动端数据填报页面开发,钱泰文,5月20日,高" style="text;html=1;strokeColor=#dee2e6;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t2_r2" value="2,Web端回归测试,李一鸣,5月22日,高" style="text;html=1;strokeColor=#dee2e6;fillColor=#f8f9fa;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="382" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t2_r3" value="3,用户手册编写,孙谋,5月25日,中" style="text;html=1;strokeColor=#dee2e6;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="404" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <!-- 三、风险与问题 -->
+        <mxCell id="section3_title" value="三、风险与问题" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="60" y="445" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="table3_header" value="编号,问题描述,提出人,状态,解决方案/负责人" style="text;html=1;strokeColor=#dee2e6;fillColor=#e9ecef;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="475" width="1080" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t3_r1" value="P-01,国家接口文档缺少周期字段,曾彦承,解决中,已发邮件，等待回复/王威霖" style="text;html=1;strokeColor=#dee2e6;fillColor=#fef9e7;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="500" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t3_r2" value="P-02,iOS真机测试设备不足,曹相阳,已解决,借用学院设备" style="text;html=1;strokeColor=#dee2e6;fillColor=#e8f8f5;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="522" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <!-- 四、变更情况 -->
+        <mxCell id="section4_title" value="四、变更情况" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="60" y="565" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="table4_header" value="编号,提出日期,变更内容,状态,影响,批准人" style="text;html=1;strokeColor=#dee2e6;fillColor=#e9ecef;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="595" width="1080" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t4_r1" value="CH-04,4月21日,月报改半月报,已批准,+2天,王威霖" style="text;html=1;strokeColor=#dee2e6;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="620" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t4_r2" value="CH-05,4月21日,增加移动端，工期延后2周,已批准,+10天,王威霖" style="text;html=1;strokeColor=#dee2e6;fillColor=#f8f9fa;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="642" width="1080" height="22" as="geometry"/>
+        </mxCell>
+        
+        <!-- 五、质量数据 -->
+        <mxCell id="section5_title" value="五、质量数据" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="60" y="685" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="table5_left" value="指标,数值" style="text;html=1;strokeColor=#dee2e6;fillColor=#e9ecef;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="715" width="350" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t5_r1" value="代码行数（Web+移动端）" style="text;html=1;strokeColor=#dee2e6;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="740" width="350" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="t5_r1_v" value="15,200行" style="text;html=1;strokeColor=#dee2e6;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="410" y="740" width="200" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t5_r2" value="本周新增代码行数" style="text;html=1;strokeColor=#dee2e6;fillColor=#f8f9fa;align=left;verticalAlign=middle;fontSize=11;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="762" width="350" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="t5_r2_v" value="3,500行" style="text;html=1;strokeColor=#dee2e6;fillColor=#f8f9fa;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="410" y="762" width="200" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t5_r3" value="本周新增缺陷" style="text;html=1;strokeColor=#dee2e6;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="784" width="350" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="t5_r3_v" value="8个（严重0，一般5，建议3）" style="text;html=1;strokeColor=#dee2e6;fillColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="410" y="784" width="200" height="22" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="t5_r4" value="单元测试覆盖率" style="text;html=1;strokeColor=#dee2e6;fillColor=#f8f9fa;align=left;verticalAlign=middle;fontSize=11;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="806" width="350" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="t5_r4_v" value="82%" style="text;html=1;strokeColor=#dee2e6;fillColor=#f8f9fa;align=left;verticalAlign=middle;fontSize=11;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="410" y="806" width="200" height="22" as="geometry"/>
+        </mxCell>
+        
+        <!-- 六、需要协助 -->
+        <mxCell id="section6_title" value="六、需要老师协助的事项" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="660" y="685" width="200" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="assist_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eaf2f8;strokeColor=#3498db;" vertex="1" parent="1">
+          <mxGeometry x="660" y="715" width="460" height="100" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="assist1" value="• 国家接口测试账号申请，请老师帮忙协调" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="730" width="300" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="assist2" value="• 项目验收时间建议安排在6月10日下午" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="760" width="300" height="25" as="geometry"/>
+        </mxCell>
+        
+        <!-- 签字栏 -->
+        <mxCell id="sign_line" value="项目经理签字：_____________" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="860" width="200" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="sign_date" value="日期：_____________" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="860" width="150" height="25" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
