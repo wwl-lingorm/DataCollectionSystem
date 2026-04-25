@@ -68,6 +68,29 @@ Or from the repository root:
 npm run dev:client
 ```
 
+## Automated tests
+
+Backend tests (Vitest + Supertest):
+
+```bash
+npm test
+```
+
+Frontend tests (Vitest + React Testing Library):
+
+```bash
+cd client
+npm test
+```
+
+Watch mode:
+
+```bash
+npm run test:watch
+cd client
+npm run test:watch
+```
+
 ## Current API examples
 
 - `GET /api/v1/enterprise/dashboard`

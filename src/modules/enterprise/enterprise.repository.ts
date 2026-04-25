@@ -46,6 +46,11 @@ export class EnterpriseRepository {
   listReportsByFilingId(filingId: string) {
     return this.reports.filter((item) => item.filingId === filingId);
   }
+
+  reset() {
+    this.filings = [];
+    this.reports = [];
+  }
 }
 
 export const enterpriseRepository = new EnterpriseRepository();
